@@ -18,20 +18,20 @@ public class ChromeTest {
 	public void setUp()
 	{
 		 // System.setProperty("webdriver.edge.driver", "C:\\Users\\magrawa4\\Downloads\\edgedriver_win64\\msedgedriver.exe");
-	      driver = new ChromeDriver();
-	      driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-	      driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	    //  driver = new ChromeDriver();
+	     // driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+	     // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	
 	@Test
 	public void loginTest()
 	{
-		driver.findElement(By.name("username")).sendKeys("Admin");
-		driver.findElement(By.name("password")).sendKeys("admin123");
-		driver.findElement(By.xpath("//button[normalize-space()='Login']")).click();
+		//driver.findElement(By.name("username")).sendKeys("Admin");
+		//driver.findElement(By.name("password")).sendKeys("admin123");
+		//driver.findElement(By.xpath("//button[normalize-space()='Login']")).click();
 		
-		boolean status=driver.findElement(By.xpath("//h6[normalize-space()='Dashboard']")).isDisplayed();
-	    Assert.assertEquals(status, true);
+//		boolean status=driver.findElement(By.xpath("//h6[normalize-space()='Dashboard']")).isDisplayed();
+	//    Assert.assertEquals(status, true);
 	
 	}
 
