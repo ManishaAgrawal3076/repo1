@@ -9,7 +9,7 @@ public class TestNGDemo1 {
 	@Test(groups = "A")
 	public void test1()
 	{
-		Assert.assertEquals(false, 3==3);
+		Assert.assertEquals(false, 3==4);
 		System.out.println("Stops execution if fail");
 	}
 	
@@ -17,7 +17,7 @@ public class TestNGDemo1 {
 	public void test2()
 	{
 		SoftAssert assert1=new SoftAssert();
-		assert1.assertEquals(false, 3==3);
+		assert1.assertEquals(false, 3==4);
 		System.out.println("Does not stop execution if fail");
 	
 		assert1.assertAll();
