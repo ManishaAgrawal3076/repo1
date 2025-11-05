@@ -23,4 +23,9 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+    goals: 'clean test'
+-task:PublishTestResults@2
+  input:
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    testRunTitle:'TestNg Test Results'
+         
